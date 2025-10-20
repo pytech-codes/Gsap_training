@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1b1b1b;
+
+}
+section.sidebar{
+    height: 100vh;
+    width: 20%;
+    background: #29292929;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+}
+.hide{
+    transform: translateX(-280px);
+
+}
+ul li{
+list-style-type: none;
+margin-bottom: 10px;
+}
+ul li a{
+     text-decoration: none;
+     font-size: 1.2rem;
+     font-family: cursive;
+     color: white;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: rgba(255, 166, 0, 0.856);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
+}

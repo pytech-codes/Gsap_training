@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prolanz | Social Media Growth Package</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+        position: relative;
+      height: 100vh;
+      overflow: hidden;
+
+    }
+    .hero {
+        position: relative;
+      height: 100vh;
+      overflow: hidden;
+
+    }
+
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero-text {
+      font-family: 'Poppins', sans-serif;
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10rem;
+      color: black;
+      z-index: 100;
+      line-height: 1;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      /* z-index: 50; */
+    }
+     .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <video autoplay muted loop playsinline>
+      <source src="188807-883827737_small.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h1 class="hero-text" style="font-family: 'Kumar One Outline';">ProlanZ</h1>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="shadow-sm">
+    <div class="flex justify-between items-center px-10 py-6 w-full text-white">
+      <!-- Left: Nav links -->
+      <ul class="flex space-x-8 text-sm font-medium">
+        <li><a href="#home" class="hover:text-rose-600 transition">Home</a></li>
+        <li><a href="#why" class="hover:text-rose-600 transition">Why Us</a></li>
+        <li><a href="#package" class="hover:text-rose-600 transition">Package</a></li>
+        <li><a href="#contact" class="hover:text-rose-600 transition">Contact</a></li>
+      </ul>
+
+      <!-- Right: Rights text -->
+      <p class="text-xs text-gray-400">© All rights reserved</p>
+    </div>
+  </nav>
+
+<section id="growth-sections" class="bg-white text-gray-800 py-20 px-6 md:px-16 space-y-24">
+
+  <!-- 1️⃣ Organic Growth -->
+  <div class="flex flex-col md:flex-row items-center gap-10">
+    <img src="hakim-menikh-jGvD3LnOTxk-unsplash.jpg" alt="Organic Growth" class="w-full md:w-1/2 rounded-2xl shadow-lg object-cover growth-img opacity-0">
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-4xl font-bold text-rose-600">Organic Growth</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Build a loyal following through authentic engagement, optimized posting schedules, and tailored content strategies that connect with your audience naturally.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2️⃣ Targeted Campaigns -->
+  <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+    <img src="mariia-shalabaieva-HBkpnDVc_Ic-unsplash.jpg" alt="Targeted Campaigns" class="w-full md:w-1/2 rounded-2xl shadow-lg object-cover growth-img opacity-0">
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-4xl font-bold text-rose-600">Targeted Campaigns</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Run precise, data-driven campaigns that put your brand in front of the right audience. Maximize ROI and brand visibility through smart ad targeting.
+      </p>
+    </div>
+  </div>
+
+  <!-- 3️⃣ Analytics & Reporting -->
+  <div class="flex flex-col md:flex-row items-center gap-10">
+    <img src="rolf-van-root-Dj1EPDH5_h4-unsplash.jpg" alt="Analytics & Reporting" class="w-full md:w-1/2 rounded-2xl shadow-lg object-cover growth-img opacity-0">
+    <div class="w-full md:w-1/2 space-y-4">
+      <h2 class="text-4xl font-bold text-rose-600">Analytics & Reporting</h2>
+      <p class="text-gray-600 leading-relaxed">
+        Track performance with powerful insights. We analyze engagement trends and provide actionable reports to help you make informed growth decisions.
+      </p>
+    </div>
+  </div>
+
+</section>
+<section class="h-[150vh] bg-gray-100 flex items-center justify-center text-3xl text-gray-500">
+    More to come
+  </section>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // On load: expand slightly for a smooth intro
+    gsap.fromTo(".hero-text", 
+      { scale: 0.7, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 1.5, ease: "power2.out" }
+    );
+
+    // On scroll: shrink and move into navbar
+    gsap.to(".hero-text", {
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+      top: "-45px",
+    //   left: "7rem",
+      scale: 0.2,
+      duration:2,
+      color: "white",
+      ease: "linear"
+    });
+//      gsap.fromTo(".growth-img",
+//     { scale: 0, borderRadius: 100,},
+//     {
+//       scrollTrigger: {
+//         trigger: ".growth-img",
+//         start: "top 80%",
+//         end: "bottom 20%",
+//         scrub: true,
+//       },
+//       scale: 1.3,
+//       borderRadius: "0rem",
+//       ease: "linear",
+//       rotate:360,
+//     }
+//   );
+gsap.utils.toArray(".growth-img").forEach((img, i) => {
+  gsap.fromTo(img,
+    { y: 100, opacity: 0, scale: 0.9 },
+    {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      duration: 1.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: img,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      }
+    }
+  );
+});
+  </script>
+
+</body>
+</html>
