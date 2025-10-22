@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1b1b1b;
+
+}
+.container{
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 90px; */
+    margin-top: 20%;
+    margin-left: 40%;
+    /* border: 2px solid black; */
+}
+.box-container{
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-left: 120px;
+
+}
+.box{
+    background-color: #ffa31a;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-left: 10px;
+padding: 12px;
+width: 80px;
+cursor: pointer;
+}
