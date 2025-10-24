@@ -8,7 +8,10 @@ import { SplitText } from "gsap/SplitText";
 //     duration:2,
 // })
 gsap.registerPlugin(ScrollTrigger,SplitText);
-
+gsap.set('.title',{
+    y:-100,
+    // fontSize:300
+})
 const navTween = gsap.timeline({
     scrollTrigger:{
         trigger: '.nav',
@@ -56,5 +59,29 @@ gsap.timeline({
     y:-300
 },0)
 .to('.title',{
-    y:-200
+    y:80
 },0)
+.to('.spirit',{
+    y:50,
+},0)
+const videoRef = document.querySelector(".video"); // ✅ Select your video by class
+gsap.set('video',{
+    // y:-500
+})
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".video",  // ✅ match your video class
+    start: "center 50%",
+    end: "bottom top",
+    scrub: true,
+    pin: true
+  }
+});
+
+// ✅ Wait for the video metadata to load before animating
+videoRef.onloadedmetadata = () => {
+  tl.to(videoRef, {
+    currentTime: videoRef.duration, // scrub through entire video duration
+    ease: "none"
+  });
+};
