@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Modern Negra';
+  src: url('./fonts/Modern-Negra-Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; 
+     color: white;
+    text-align: center; */
+    font-family: 'Modern Negra';
+}
+img{
+  width: 100px;
+  margin-left: 26%;
+  align-items: center;
+  margin-top: 25%;
+  position: absolute;
+  
+}
+div{
+  margin-left: 40%;
+  background-color: red;
+/* padding: 5px; */
+position: absolute;
+}

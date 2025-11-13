@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" crossorigin src="/assets/index-BZXLVmgp.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bisu253q.css">
+</head> 
+<body>
+  <nav class="shadow-sm z-50 navbar" style="padding-left: 0px;">
+    <div class="nav flex justify-between px-28 py-6 w-full text-red fixed z-50 transition-all duration-500">
+      
+      <p class="text-3xl text-gray-400"><img src="/assets/b45ace3e17e611326aa2fd38da85cb856710830b-CT8n15By.png" class="w-10 h-10 p-0 absolute" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Velvet Pours</p>
+      <ul class="flex space-x-8 text-sm font-medium">
+        <li><a href="#home" class=" transition">Cocktails</a></li>
+        <li><a href="#why" class=" transition">About Us</a></li>
+        <li><a href="#package" class=" transition">The Art</a></li>
+        <li><a href="#contact" class=" transition">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+   <main>
+   
+<section id="hero" class="absolute z-10 min-h-dvh w-full border-none">
+   
+
+  <video 
+    src="/videos/output.mp4" 
+    class="absolute inset-0 w-full h-full object-cover opacity-80 video"
+    autoplay muted playsinline preload="auto">
+  </video>
+
+  <h1 class="title md:mt-32 mt-0 text-8xl md:text-[20vw] leading-none text-center font-modern-negra" style="color: ;">
+    PYTECH
+  </h1>
+
+  <img 
+    src="/assets/583b3f8b62d50eac87919b7a16b91cf6b4eeaa87-BMWBBlx8.png"
+    alt="Leaf Decoration"
+    class="absolute w-[200px] md:w-[200px] rotate-[45deg] origin-bottom-left left-leaf" style="bottom: 200px; left: -115px;;"
+  >
+  <img 
+    src="/assets/583b3f8b62d50eac87919b7a16b91cf6b4eeaa87-BMWBBlx8.png"
+    alt="Leaf Decoration"
+    class="absolute w-[200px] md:w-[200px] rotate-[-20deg] origin-bottom-left right-leaf" style="bottom: 280px; right: -150px;"
+  >
+
+  <div class="body">
+    <div class="content">
+      <div class="space-y-5 hidden md:block text-red xl:ml-60 ">
+        <p class="cool" style="margin-left: -140px;">Cool. Crisp. Classic.</p>
+        <p class="subtitle spirit" style="margin-left: -140px;">
+          Sip the Spirit <br>
+           of Summer
+        </p>
+  
+      </div>
+      <div class="view-cocktails">
+        <p class="subtitles spirit">
+           Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes — designed to delight your senses
+        </p><br>
+        <a href="View Cocktails" class="subtitles">View Cocktails</a>
+      </div>
+    </div>
+  </div>
+  
+      
+</section>
+
+    <div class="h-dvh bg-white">
+      
+    </div>
+    <section id="cocktails" class="cocktails z-10 w-full min-h-dvh border-red">
+      <br><br><br><br>
+<div class="body z-10 absolute" >
+    <div class="content">
+      <div class="flex space-y-5 hidden md:block text-red xl:ml-60 ">
+        <div class="popular mb-10">
+        <p class="sub text-white" style="margin-left: -140px;">
+       Most Popular Cocktails
+        </p>
+         <table id="popular-table" class="border-collapse shadow rounded-lg overflow-hidden" style="margin-left: -140px;opacity: 0.8;">
+        <thead class="text-left text-red">
+          
+        </thead>
+        <tbody class="z-[-99]"></tbody>
+      </table>
+     </div>
+       <div class="view-cocktails cock">
+        <p class="subt text-white">
+           Most Loved Cocktail
+        </p><br>
+        <table id="loved-table" class="border-collapse shadow rounded-lg overflow-hidden" style="margin-left: 750px; opacity: 0.8;">
+        <thead class="text-left text-red">
+          
+        </thead>
+        <tbody class="z-[-99]"></tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="about">
+  <div class="mb-16 md:px-0 px-5">
+    <div class="content">
+      <div class="md:col-span-8">
+        <p class="badge">Best Cocktails</p>
+        <h2>Where every detail Matters <span class="text-white">-</span></h2>from muddle to garnish
+      </div>
+      <div class="sub-content">
+        <p>
+              
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="h-dvh bg-red">
+
+    </div>
+
+    <div class="h-dvh bg-green">
+      
+    </div>
+    <div class="h-dvh bg-black">
+
+    </div>
+   </main>
+
+<script>
+const popularCocktails = [
+  { name: 'Rhino Pale Ale', country: 'CA', detail: '750 ml', price: '$20' },
+  { name: 'Irish Guinness', country: 'IE', detail: '600 ml', price: '$29' },
+  { name: 'Bloody Mary', country: 'US', detail: '500 ml', price: '$25' },
+  { name: 'Piña Colada', country: 'CU', detail: '700 ml', price: '$27' }
+];
+
+const lovedCocktails = [
+  { name: 'Mojito', country: 'CU', detail: '500 ml', price: '$22' },
+  { name: 'Margarita', country: 'MX', detail: '450 ml', price: '$24' },
+  { name: 'Cosmopolitan', country: 'US', detail: '500 ml', price: '$28' },
+  { name: 'Negroni', country: 'IT', detail: '600 ml', price: '$26' }
+];
+
+function renderTable(tableId, data) {
+  const tbody = document.querySelector(`#${tableId} tbody`);
+  data.forEach(drink => {
+    const row = document.createElement('tr');
+    row.className = 'hover:bg-slate-900 hover:rounded-lg transition';
+    row.innerHTML = `
+      <td class="py-3 px-4 font-medium">
+        ${drink.name}<br>${drink.country} | ${drink.detail}</td>
+      <td class="py-3 px-28">${drink.price}</td>
+  
+    `;
+    tbody.appendChild(row);
+  });
+}
+
+renderTable('popular-table', popularCocktails);
+renderTable('loved-table', lovedCocktails);
+</script>
+</body>
+</html> 
