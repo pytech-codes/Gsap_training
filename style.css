@@ -10,11 +10,11 @@ body{
 
 @font-face {
   font-family: 'Modern Negra';
-  src: url('./public/fonts/Modern-Negra-Demo.ttf') format('truetype');
+  src: url('/fonts/Modern-Negra-Demo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-h1,p,h2,h6{
+h1,p,h2,h6,h3{
   font-family: 'Modern Negra';
 
 }
@@ -29,12 +29,12 @@ nav{
     /* background-color: black; */
 }
 #hero{
-    background: url('images/56edfd94c8fe79567292d4b45605cc9c557d528b.png');
+    background: url('/images/56edfd94c8fe79567292d4b45605cc9c557d528b.png');
     opacity: ;
     
 }
 .cocktails{
-    background: url('images/56edfd94c8fe79567292d4b45605cc9c557d528b.png');
+    background: url('/images/56edfd94c8fe79567292d4b45605cc9c557d528b.png');
 
 }
 .cool{
@@ -93,5 +93,15 @@ tr,a{
 
 }
 .noisy{
-    background: url('/public/images/noise.png');
+    background: url('/images/noise.png');
+}
+.masked-img{
+    mask-image: url("/images/mask-img.png");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
+}
+.raial-gradient{
+    background: radial-gradient(circle at center,#434343 0%, #000 50%,transparent 100%
+    );
 }

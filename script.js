@@ -134,4 +134,29 @@ const scrollTime = gsap.timeline({
   opacity: 0, duration:1, yPercent:100, ease:'expo out', stagger:0.02,
 }).from('.top-grid div, .bottom-grid div',{
   opacity:0, duration:1, ease:'power1.inOut', stagger:0.06, yoyo:true,
-}, '-=0.5')
+}, '-=0.5');
+
+// const isMobile = useMediaQuery({maxWidth:767}); 
+// const start = isMobile ? 'top 20%' : '';
+
+const maskTime = gsap.timeline({
+  scrollTrigger:{
+    trigger:'#art',
+    start: 'top top',
+    end:'bottom center',
+    scrub:1.5,
+    pin:true,
+  }
+});
+  maskTime.to('.wll-fade',{
+  opacity:0, stagger:0.2, ease:'power1.inOut',
+}).to('.masked-img', {
+  scale:1.3, maskPosition:'center', maskSize:'400%',
+  duration:2, ease:'power1.inOut',
+}).to('#masked-content',{
+  opacity:1,
+  yPercent:10,
+  duration:1,
+  ease:'power1.inOut'
+  
+})
