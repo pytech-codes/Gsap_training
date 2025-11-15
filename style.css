@@ -105,3 +105,33 @@ tr,a{
     background: radial-gradient(circle at center,#434343 0%, #000 50%,transparent 100%
     );
 }
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+button{
+    padding-bottom: 2px;
+    cursor: pointer;
+
+}
+button:hover{
+    color: yellow;
+    border-bottom: 1px yellow solid;
+    font-family: 'Modern Negra';
+}
+button:active{
+    color: ; 
+}
+.btn{
+    color: #7a7878;
+
+}
+.btn:active{
+    color: white;
+}
